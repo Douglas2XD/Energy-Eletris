@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">  
+
+    <div id="imageContainer">
+        <img id="displayedImage" src="img1.jpeg" alt="">
+    </div>
+    <script>
+        // Lista de URLs das imagens que você deseja exibir
+        const imageList = ["img1.jpeg", "img2.jpeg", "img3.jpeg"];
+        let currentImageIndex = 0;
+            function changeImage() {
+          const imageElement = document.getElementById("displayedImage");
+          currentImageIndex = (currentImageIndex + 1) % imageList.length;
+          const nextImage = imageList[currentImageIndex];
+          
+          imageElement.style.opacity = 0;
+          
+          setTimeout(() => {
+            imageElement.src = nextImage;
+            imageElement.alt = `Image ${currentImageIndex + 1}`;
+            imageElement.style.opacity = 1;
+          }, 500); // Tempo em milissegundos da transição (deve corresponder à transição CSS)
+        }
+      
+        // Chamar a função para trocar a imagem a cada 3 segundos (3000 milissegundos)
+        setInterval(changeImage, 2000);
+      </script>
+
+</body>
+</html>

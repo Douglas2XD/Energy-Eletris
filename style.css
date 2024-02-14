@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo{
+    width: 34px;
+}
+body {
+    font-family: 'Arial', sans-serif; /* Adicione uma fonte de sua escolha */
+    background-color: #26272C;    
+    color: white;
+    margin: 20px; /* Ajuste as margens conforme necessário */
+    line-height: 1.6;
+}
+@media screen and (width > 700px) {
+    body{
+        margin: 150px;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    #MainIndex {
+        width: 70%;
+        margin: 0 auto; /* Centralizar horizontalmente */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+#info {
+    margin-top: 100px;
+}
+
+.titleInfo {
+    margin-top: 30px;
+}
+
+#sobreNos,
+#servico,
+#contato {
+    text-align: center;
+    padding: 20px;
+    height: 1200px;
+}
+
+#servico {
+    background-color: black;
+    color: white;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out; /* Adicione um efeito de transição às cartas */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumentar o tamanho da carta ao passar o mouse */
+}
+
+#listadeservicos{
+    display: flex;
+    gap: 10px;
+}
+@media screen and (max-width: 600px) {
+    #listadeservicos{
+        display: block;
+
+        
+    }
+
+}
+#Main{
+    justify-content: center;
+    margin-top: 120px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Main h2{
+    color: #3E46CB;
+}
+#Main p{
+    color: white;
+    
+}
+#Buttons{
+    width: 120px;
+    height: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    background-color: #26272c00;
+    color: white;
+    border-color: #3E46CB;
+}
+#Buttons:hover{
+    background-color: #3E46CB;
+    transition: 1s;
+
+}
+imgg{
+    width: 120px;
+    height: 220px;
+}
+.carousel-item p{
+    color: white;
+}
+
+
+#Sobrenos h2{
+    color: #3E46CB;
+    text-align: center;
+}
+#Sobrenos strong, li{
+    text-align: center;
+    color: white;
+}
+#Servicos h2{
+    margin-top: 252px;
+    color: #3E46CB;
+    text-align: center;
+}
+
+
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.icone {
+    position: relative;
+    left: 53%;
+    transform: translateX(-50%); /* Para centralizar corretamente */
+    background-color: #3E46CB;
+    height: 150px;
+    width: 100px;
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 962px) {
+    .icone {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (width <= 962px) {
+    .icone {
+        left: 55%;
+        transform: translateX(-50%);
+    }
+}
+
+
+#RedesSociais{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    gap: 6rem;
+    
+}
+
+
+
+.icones{
+    background-color: #3E46CB;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 40px;
+}
+.imgg{
+    align-items: center;
+    height: 50px;
+    width: 55px;
+    margin-top: 24px;
+}
+.icones:hover{
+    margin-top: -20px;
+    transition: 1s;
+
+}
+
+.icones:not(:hover) {
+    margin-top: 20px;
+    transition: 1s;
+}
+
+.icones::before{
+    margin-top: 20px;
+    transition: 1s;
+}
+.redess{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.atencao{
+    color: #3E46CB;
+    text-align: center;
+}
+.atencao p{
+    text-decoration: underline;
+}
+
+.servicos, .servicoss{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card p{
+    color: black;
+}
+
+@media screen and (width <= 1000px) {
+    .servicos, .servicoss{
+        display: grid;
+        gap: 1rem 1rem;
+        justify-content: center;
+        height: 1360px;
+    }
+  }
+  #ctt{
+    color: #3E46CB;
+    text-align: center;
+  }
+
+  .servicosInfo{
+    display: grid;
+    gap: 1rem;
+    
+  }
+
+.emote{
+    margin-left: -8%;
+}
+
+.d-block w-100{
+    width: 120px;
+}
+
+#button-nav{
+    width: 120px;
+    border-radius: 40px;
+}
+#button-nav img{
+    width: 20px;
+    display: inline;
+    margin: 5px;
+    border-radius: 40px;
+}
